@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<!--
+    File: index.html
+    Author: Oneza Hassan Alvi    
+    Created: 6/24/2025
+    Description: [Brief description of what this HTML file does]
+-->
+
+<!-- 
+    =============================================
+    HTML BASICS - COMMENT GUIDE
+    =============================================
+
+    GENERAL NOTES:
+    - HTML is not case sensitive (<html> = <HTML>)
+    - First file as homepage should always be named index.html
+    - Element = tag + content
+    - Use page source to see HTML code, inspect to edit in browser
+    - Live server extension renders code to browser
+
+    STRUCTURE:
+    - <html> is the root tag and parent to <head> and <body>
+    - <head> contains metadata (not displayed in browser)
+    - Viewport meta tag ensures responsiveness across devices
+    - Some tags are self-closing (e.g., <br>, <img>)
+
+    COMMENTING:
+    - Ctrl+/ to comment/uncomment whole lines
+    - Comments are not parsed by browsers
+
+    =============================================
+    COMMON TAGS & ATTRIBUTES
+    =============================================
+
+    HEADINGS:
+    - <h1> to <h6> (h1 most important, h6 least)
+    - Use for semantic importance, not just styling
+    - For size adjustments, use CSS font-size
+
+    LINKS:
+    - Anchor tag: <a href="url">Display Text</a>
+    - target="_blank" opens link in new tab
+    - Types:
+    * Absolute: External website links
+    * Relative: Links to your own pages
+
+    IMAGES:
+    - <img src="path" alt="description">
+    - Alt text displays if image fails to load
+    - Prefer CSS for sizing over HTML attributes
+
+    TEXT FORMATTING:
+    - <b>bold</b> vs <strong> (semantic importance)
+    - <i>italic</i>
+    - <u>underline</u>
+    - <big> and <small> for size
+    - <sub>subscript</sub> and <sup>superscript</sup>
+    - <pre> preserves whitespace and line breaks
+
+    LISTS:
+    - <ul>: Unordered (bulleted) list
+    - <ol>: Ordered (numbered) list
+    - <li>: List item (used in both ul and ol)
+
+    OTHER:
+    - <hr/>: Horizontal rule/line separator
+    - <br/>: Line break (empty tag)
+
+    =============================================
+    PAGE STRUCTURE & SEMANTICS
+    =============================================
+
+    SEMANTIC TAGS (Recommended):
+    - Clearly describe their purpose
+    - Examples: <header>, <main>, <footer>, <section>, <article>, <aside>
+    - Benefits: Better readability, structure, and accessibility
+
+    NON-SEMANTIC TAGS:
+    - <div>: Block-level container (takes full width)
+    - <span>: Inline container (takes only needed space)
+
+    =============================================
+    TABLES
+    =============================================
+
+    STRUCTURE:
+    - <table>: Container
+    - <tr>: Table row
+    - <th>: Table header (column name)
+    - <td>: Table data cell
+    - Semantic grouping:
+    * <thead>: Header content
+    * <tbody>: Main table data
+    - <caption>: Table description
+    - colspan: Merge cells horizontally
+
+    =============================================
+    FORMS
+    =============================================
+
+    PURPOSE:
+    - Collect user data (logins, signups, etc.)
+
+    STRUCTURE:
+    - <form action="processing-script">
+    - Input types: text, email, date, radio, checkbox, submit
+    - <label>: Describes input purpose
+    - <textarea>: Multi-line text input
+    - <select>: Dropdown menu
+    - Group related elements with <fieldset>
+
+    =============================================
+    EMBEDDING CONTENT
+    =============================================
+
+    IFRAMES:
+    - <iframe src="url">: Displays external site within your page
+    - Some sites block embedding via iframe
+
+    VIDEO:
+    - <video src="path">: Embeds video files
+    - Supports both relative and absolute paths
+
+    =============================================
+    CLASSES & IDs
+    =============================================
+
+    - Classes: Group multiple elements (like student groups)
+    - IDs: Unique identifiers for single elements
+    - Used for CSS styling and JavaScript targeting
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First page</title>
+</head>
+
+<!-- this is how you write comments -->
+<body style="background-color: bisque;">
+    <div class="centered-container">
+        <!-- <p>Helllo world! this is a paragraph</p> -->
+        <h1>HTML Practice page</h1>
+        <h2>by, Oneza</h2>
+        <h3>6/24/2025</h3>
+        <h4>Dev Weekends</h4>
+        <h5>Tech</h5>
+        <h6>(1st html page)</h6>
+        <hr/>
+        <p> <b>"Into the Unknown"</b> is a captivating journey beyond the familiar, where curiosity and courage lead to new discoveries. Whether exploring uncharted lands, diving into the depths of the ocean, or venturing into the mysteries of space, the unknown beckons with endless possibilities. It challenges our fears, sparks innovation, and pushes humanity forward. From ancient explorers to modern scientists, the drive to uncover what lies beyond has shaped history and imagination. The phrase also resonates <big>emotionally—symbolizing personal growth</big>, facing uncertainties, and embracing change. Ultimately, stepping into the unknown represents the timeless human spirit of adventure and the <small>quest for knowledge.</small></p>
+
+        <!-- the above is done after toggle word wrap-->
+        <hr/>
+
+        <p>i followed the following tutorial from apna college to learn HTML :)</p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=HN9lWnUl_4cucrt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <hr/>
+
+        <p><i>Use the following links for more information</i></p>
+
+        <a href="https://chat.deepseek.com/" target="_main">Deep Seek Chat Bot </a>
+        <br/> 
+        <a href="https://www.devweekends.com/" target="_main">Dev Weekends</a>
+        <br/>
+        <a href="hello.html" target="_main">Go to Hello</a>
+        <br/>
+        <a href="portfolio/sampleforrelativelink.html" target="_main"> relative link</a>
+        <hr/>
+        <br/>
+        <br/>
+        <img src="https://i.pinimg.com/736x/bf/91/f0/bf91f083f6d50be1b5259e2335fc265f.jpg" 
+        alt="a hijabi cat " height="300"/>
+        <img src="mejpg.jpg" alt="me wen coding" height="300" />
+        <br/>
+        <br/>
+        
+        <big><b><i><u>what matters is how much you are willing to invest</u></i></b></big>
+        <!--<br/>-->
+        <hr/>
+        <i>what does not matter is how much you have lost already</i>
+        <br/>
+        <hr/>
+        <p>Drinking        enough H<sub>2</sub>O is the only way to get glass skin. NOCAP!
+        It was <b>so hot</b> today like 39<sup>o</sup>C MANNN</p>
+        <a href="https://www.bing.com/search?pglt=299&q=islamabad+weather&cvid=ad556160b0244f588f5997c26c73e84f&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBAAGEDSAQg1NzU0ajBqMagCCLACAQ&FORM=ANNTA1&PC=SCFRE3" target="_main">Click here to see Islamabad's live weather bruhh </a>
+        <br/>
+        <img src= "https://i.pinimg.com/736x/b4/de/3f/b4de3fbeea481336c6e17e3663778d90.jpg" alt="intense heat reaction" height="90"/>
+
+        <pre>CLIMATE     CHANGE     IS       REALLLLLLL</pre>
+        <hr/>
+        <header>
+            <pre><h4>My Portfolio</h4></pre>
+        </header>
+
+        <main>
+
+            <section>
+                <b>Education:</b> BS Bioinformatic | QAU 
+                <br/>
+                <b>Skills: </b><i>python, R, Linux, Problem solving</i>
+            </section>
+
+            <section>
+                <b>Subjects:</b>Subjects: AI ML Genomics PF
+            </section>
+            <br/>
+            <hr/>
+
+            <article>
+                <h2>Bioinformatics and the Role of Data Structures & Algorithms</h2>
+                <p>
+                    Bioinformatics combines biology, computer science, and statistics to analyze biological data, such as DNA sequences, protein structures, and genetic variations. Efficient processing of this vast data relies heavily on <strong>Data Structures and Algorithms (DSA)</strong>.
+                </p>
+                <h3>Key Applications:</h3>
+                <ul>
+                    <li><strong>Sequence Alignment:</strong> Algorithms like Smith-Waterman and BLAST use dynamic programming to compare genetic sequences.</li>
+                    <ul>
+                        <li>BLAST is NCBIs alignment tool</li>
+                    </ul>
+                    <li><strong>Genome Assembly:</strong> Graphs (De Bruijn graphs) reconstruct genomes from fragmented DNA reads.</li>
+                    <li><strong>Structure Prediction:</strong> Tree-based algorithms model protein folding and RNA structures.</li>
+                </ul>
+                <h3>Key Languages in python:</h3>
+                <ol>
+                    <li>python</li>
+                    <ul>
+                        <li>Mostly used for tool building</li>
+                        <li>efficient for ML and AI tool and pipeline creation</li>
+                    </ul>
+                    <li>R</li>
+                    <li>perl</li>
+                    <li>C##</li>
+                    <li>command line</li>
+                </ol>
+                <p>
+                    Mastering DSA—especially strings, graphs, and optimization techniques—is crucial for developing scalable bioinformatics tools. As genomic data grows exponentially, efficient algorithms become the backbone of breakthroughs in medicine and biotechnology.
+                </p>
+            </article>
+            <hr/>
+
+            <aside>
+                AD AD AD This is an ad (our SCO will ignore this so you dont have to click either)
+                <br/>
+                <a href="https://www.pinterest.com/business/hub/" target="_main">
+                    <br/>
+                    <img 
+                    src="https://www.bing.com/th/id/OIP.10UKoBPKZomkOdhy9qJTLAHaEY?w=246&h=211&c=8&rs=1&qlt=90&o=6&cb=iavawebpc1&dpr=1.3&pid=3.1&rm=2" 
+                    height="100" 
+                    alt="pinterest logo"/>
+                <a>
+            </aside>
+
+            <div>
+                <p>
+                    div tags takes up the whole width since it is a block element (this is a div tag) however the inline tag only takes the space required by it
+                </p>
+            </div>
+
+            <span style="color: chocolate;">span tags takes up the space that is required, no extra space thats why it is an inline tag</span>
+
+            <hr/>
+            <br/>
+
+            <table border="1" style="width: 60%; border-collapse: separate; font-family: Arial;">
+
+                <caption style="color: blueviolet;" >
+                    <b> A hypothetical compound screening dataset used in early-stage drug discovery:</b>
+                </caption>
+                <thead>
+                    <tr>
+                        <th colspan="2">Compound</th> 
+                        <th colspan="3">Bioactivity</th>
+                        <th>Access Array</th>
+                    </tr>
+
+                    <tr>
+                        <!-- Sub-headers under the merged "Compound" -->
+                        <th>ID</th>
+                        <th>Molecular Weight</th>
+                        <!-- Sub-headers under the merged "Bioactivity" -->
+                        <th>IC50 (nM)</th>
+                        <th>Target</th>
+                        <th>Solubility (µM)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>CMP001</td>
+                        <td>342.4</td>
+                        <td>120</td>
+                        <td>EGFR</td>
+                        <td>45</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>CMP002</td>
+                        <td>289.3</td>
+                        <td>850</td>
+                        <td>HER2</td>
+                        <td>12</td>
+                        <td>Inactive</td>
+                    </tr>
+                    <tr>
+                        <td>CMP003</td>
+                        <td>456.6</td>
+                        <td>5.2</td>
+                        <td>PARP1</td>
+                        <td>89</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>CMP004</td>
+                        <td>398.5</td>
+                        <td>>10,000</td>
+                        <td>CDK4</td>
+                        <td>3</td>
+                        <td>Inactive</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+            <br/>
+            <img src="https://i.pinimg.com/736x/17/dc/c7/17dcc72b57de49718d72a6843ede2cc6.jpg" alt="i will handle this but lemme cry first" height="100">
+            <br/>
+
+            <!--<p>Watch more about Drug Discovery here</p>
+            <video width="560" height="315" src="drug.mov" controls >
+                DRug discovery and development process
+            </video>-->
+
+            <hr/>
+
+
+            <h4>Sign up for our weekly news letter below </h4>
+            <form>
+                <input type="text" placeholder=" Type your username"> <br/>
+                <input type="password" placeholder="Type your password"> <br/>
+                <input type="email" placeholder="Enter your email"><br/>
+                
+                <p>Select your semester</p> 
+                <label for="101">
+                    <input type="radio" name="Semester" value="7" id="101">semester 7
+                </label>
+                <label for="102">
+                    <input type="radio" name="Semester" value="8" id="102">semester 8
+                </label>
+                <br/>
+
+                <p>Select your subject/ subjects</p>
+                <label for="dynamic programing">
+                    <input type="checkbox" value="dynamic programing" name="bioinformatics" id="101"> dynamic programing
+                </label>
+                <label for="data structure and algorithms">
+                    <input type="checkbox" value="data structure and algorithms" name="bioinformatics" id="102"> data structure and algorithms
+                </label>
+                <label for="genetic algorithms">
+                    <input type="checkbox" value="genetic algorithms" name="bioinformatics" id="102"> genetic algorithms
+                </label>
+                <br/>
+
+                <p>Select your city from the dropdown menu</p>
+                <select name="City">
+                    <option value="Islamabad">Islamabad</option>
+                    <option value="Karachi">Karachi</option>
+                    <option value="Lahore">Lahore</option>
+                    <option value="Rawalpindi">Rawalpindi</option>
+                    <option value="Sargodha">Sargodha</option>
+                </select>
+
+                <br/>
+                <br/>
+
+                <textarea style="background-color: aquamarine;" name="Feedback" id="101" placeholder="please leave your valuable feedback before you leave." rows="3" cols="70">
+                    please leave your valuable feedback before you leave.
+                </textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+            <hr/>
+
+            <div id="id1" class="group1"></div>
+            <div id="id2" class="group1"></div>
+
+            <p>Visit devWeekends</p>
+            <iframe src="https://www.devweekends.com/?fellowship" width="560" height="315"></iframe>
+
+        </main>
+        <footer>
+            <h5>contact: brainrot@gmail.com</h5>
+            <h5>connect with me on linkedIn</h5>
+            <a href="https://www.linkedin.com/in/oneza-hassan-alvi-5984222bb/" target="_main" alt="Oneza's linkedIn" >
+                <img src="https://www.bing.com/th/id/OIP.Cn9SAHCmTy8MEaixr8bqpAHaHa?w=195&h=211&c=8&rs=1&qlt=90&o=6&cb=iavawebpc1&dpr=1.3&pid=3.1&rm=2" height="50" alt="linkedIn logo">
+                <p>Oneza's linkedIn</p>
+            </a>
+        </footer>
+        <hr/>
+    </div>
+
+    <style>
+        .centered-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+            background: #fff8ee; /* optional: makes content pop */
+            padding: 32px 40px;
+            border-radius: 16px;
+            box-shadow: 0 2px 16px #0001;
+        }/* Responsive iframe */
+        iframe {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            min-height: 200px;
+        }
+        /* Responsive table */
+        table {
+            width: 100% !important;
+            display: block;
+            overflow-x: auto;
+            font-size: 1em;
+        }
+        /* Responsive input and textarea */
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+        /* Responsive adjustments for mobile */
+        @media (max-width: 600px) {
+            .centered-container {
+                padding: 8px 4px;
+                font-size: 0.95em;
+            }
+            table {
+                font-size: 0.9em;
+            }
+            iframe {
+                min-height: 160px;
+            }
+        }
+    </style>
+
+</body>
+</html>
