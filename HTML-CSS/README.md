@@ -35,15 +35,6 @@ A comprehensive CSS reference with practical examples, best practices, and moder
 - Cross-browser compatibility
 - Performance optimization
 
-## Code Examples
-
-html
-<!-- Semantic HTML Structure -->
-<article class="card">
-  <h2>CSS Box Model</h2>
-  <p>Understanding margins, borders, and padding.</p>
-</article>
-
 
 /* Modern CSS Example */
 .card {
