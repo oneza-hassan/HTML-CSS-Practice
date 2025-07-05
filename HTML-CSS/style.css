@@ -1,0 +1,429 @@
+/*
+  File: style.css
+  Description: Main stylesheet for the project.
+  Author: Oneza Hassan Alvi
+  Created: 2025-06-26
+*/
+
+/* 
+===============================================================================
+CSS BASICS
+===============================================================================
+
+- CSS (Cascading Style Sheets) is a language used to describe the style of an HTML document.
+- Always write HTML before CSS.
+- MDN website has all CSS documentation.
+- Use Ctrl+/ to comment or uncomment code.
+
+-------------------------------------------------------------------------------
+BASIC SYNTAX
+-------------------------------------------------------------------------------
+
+selector {
+  property: value;
+}
+
+Example:
+h1 { color: red; }
+- 'h1' is the selector (HTML tag), 'color' is the property, 'red' is the value.
+- Always end each property with a semicolon.
+
+-------------------------------------------------------------------------------
+WAYS TO INCLUDE CSS
+-------------------------------------------------------------------------------
+
+1. Inline:
+   <h1 style="color: red;">Hi from Oneza</h1>
+   - Highest priority. Use only in emergencies.
+
+2. Internal (in <style> tag):
+   Place inside <head>:
+   <style> h1 { color: green; } </style>
+   - Applies to all h1 unless overridden inline.
+
+3. External (recommended):
+   Write CSS in a separate file and link in HTML:
+   <link rel="stylesheet" href="style.css">
+   - 'rel' is always 'stylesheet'.
+   - 'href' is the file path (relative or absolute).
+
+- Inline > Internal > External in terms of priority.
+- Keep most styles in external CSS.
+
+-------------------------------------------------------------------------------
+LAYOUT: FOREGROUND & BACKGROUND
+-------------------------------------------------------------------------------
+
+- Foreground: visible elements (text, buttons, etc.)
+- Background: area behind elements.
+
+-------------------------------------------------------------------------------
+COLOR SYSTEMS
+-------------------------------------------------------------------------------
+
+- Not every color has a name.
+- RGB: rgb(red, green, blue) values from 0-255.
+  Example: rgb(255, 0, 0) is red; rgb(255, 255, 0) is yellow.
+- HEX: #RRGGBB (hexadecimal, 00-ff).
+  Example: #ff0000 is red.
+- Use color pickers (Google, Coolors) for palettes and codes.
+- Prefer color palettes for consistent design.
+
+-------------------------------------------------------------------------------
+HTML BUTTONS
+-------------------------------------------------------------------------------
+
+- <button> is a container element (can contain HTML, images, etc.).
+- <input type="button" value="..."> is self-closing, label set by 'value'.
+- <button> is more flexible and recommended.
+
+-------------------------------------------------------------------------------
+SELECTORS
+-------------------------------------------------------------------------------
+
+1. Universal: * { ... }
+   - Applies to all elements. Place at the top.
+2. Element: h1 { ... }
+   - Applies to all h1 tags.
+3. ID: #heading1 { ... }
+   - Unique per page. Use '#' prefix.
+4. Class: .article { ... }
+   - For grouping multiple elements. Use '.' prefix.
+
+- To select multiple tags: h1, h2, h3 { color: red; }
+
+-------------------------------------------------------------------------------
+EMMET SHORTCUTS
+-------------------------------------------------------------------------------
+
+- .classname + Tab → <div class="classname"></div>
+- #idname + Tab → <div id="idname"></div>
+- lorem + Tab → generates placeholder text.
+
+-------------------------------------------------------------------------------
+NOTES
+-------------------------------------------------------------------------------
+
+- * is asterisk, & is ampersand.
+- CSS is applied top-to-bottom; later rules override earlier ones.
+
+===============================================================================
+TEXT PROPERTIES
+===============================================================================
+
+1. text-align: left | right | center | start | end
+   - Aligns text within parent element.
+2. text-decoration: underline | none | line-through | wavy | dotted | dashed
+   - Commonly used to style links.
+3. font-weight: normal | bold | bolder | lighter | 100-900
+   - Controls text darkness.
+4. font-style: normal | italic | oblique
+   - Changes font style.
+5. font-family: 'Font Name', fallback
+   - Use fallback fonts for compatibility.
+6. font-size: px | cm | mm | in
+   - 1 inch = 96px. Default is 16px.
+7. line-height: number | px
+   - Controls space between lines.
+8. text-transform: uppercase | lowercase | capitalize | none
+   - Changes case of text.
+
+===============================================================================
+BOX MODEL
+===============================================================================
+
+- Every element is a box: content, padding, border, margin.
+
+1. height: sets content area height (default: auto).
+2. width: sets content area width.
+3. border: width, style, color (e.g., border: 2px solid black).
+   - border-radius: rounds corners (50% for circles).
+4. padding: space between content and border (clockwise: top, right, bottom, left).
+5. margin: space outside border (can be set for each side).
+
+===============================================================================
+DISPLAY PROPERTY
+===============================================================================
+
+- display: inline | block | inline-block | none
+  - inline: only takes up as much width as needed, can be on the same line.
+  - block: takes full width, starts on a new line.
+  - inline-block: like inline, but allows width/height.
+  - none: hides the element.
+
+- Note: Setting block elements to inline disables top/bottom margins.
+
+===============================================================================
+END OF CSS NOTES
+===============================================================================
+*/
+
+
+
+/* level 1 */
+*{
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0;
+  margin:0;
+};
+
+
+
+h1{
+  color:rgb(154, 204, 213);
+}
+
+h2{
+
+  color: #0b281c;
+  font-weight:bolder;
+}
+
+h3{
+  color: rgb(9, 64, 19);
+  text-decoration: line-through;
+
+}
+
+p{
+  color:rgb(219, 208, 80)
+}
+
+button{
+  color:rgb(41, 43, 41);
+  background-color: rgb(117, 211, 148);
+
+}
+
+body{
+  background-color: rgb(150, 75, 134);
+}
+
+#heading1{
+  font:bold; color: black;
+  text-decoration: wavy underline ;
+}
+
+.article{
+  color:rgb(53, 7, 4);
+}
+
+#box{
+  background-color: rgb(89, 70, 82);
+}
+
+.heading{
+  color: rgb(201, 217, 219);
+}
+
+#lorem{
+  background-color:darkgray ;
+}
+
+#align{
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+a{
+  text-decoration: wavy underline;
+  color: rgb(243, 243, 242);
+  background-color: #0b281c;
+}
+
+#p1{
+  font-size: 15px;
+  color:black;
+  line-height: 20px;
+}
+#p2{
+  font-size: 20px;
+  color: rgb(10, 1, 10);
+  line-height: 50px;
+}
+#p3{
+  font-size: 17px;
+  color: rgb(81, 31, 31);
+  text-transform: lowercase;
+}
+
+
+#capital_centered{
+  text-align: center;
+  text-transform: Capitalize;
+}
+
+#outer{
+  font-size: 25px;
+}
+#inner{
+  font-size: 10px;
+}
+
+.levels{
+  text-align: center;
+  text-decoration: wavy underline;
+  color: rgb(37, 3, 29);
+  background-color: rgb(155, 183, 208);
+  width: 200px;
+  height:50px;
+  border: rgb(85, 14, 27);
+  border-style: solid;
+}
+
+/* level 2 */
+
+#div1{
+  /* height: 1000px; */
+  background-color:rgb(115, 102, 81);
+  /* width: 800px; */
+}
+
+#div2{
+  height: 100px;
+  width: 100px;
+  background-color:palevioletred;
+  /* border: 2px;
+  border-style: solid;
+  border-color: black; */
+  border: 2px solid rgb(6, 4, 5); 
+  text-align: center;
+  padding-left: 25px;
+  margin: 50px; 
+}
+#div3{
+  height: 100px;
+  width: 100px;
+  background-color:palevioletred;
+  /* border: 2px;
+  border-style: solid;
+  border-color: black; */
+  border: 2px solid rgb(6, 4, 5); 
+  text-align: center;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+#div4{
+  height: 100px;
+  width: 100px;
+  background-color: palevioletred;
+  /* border: 2px;
+  border-style: solid;
+  border-color: black; */
+  border: 2px solid rgb(6, 4, 5); 
+  text-align: center;
+  border-radius: 20px;
+  padding: 25px;
+  margin-top: 50px;
+}
+#div5{
+  height: 160px;
+  width: 55px;
+  background-color: rgb(0, 2, 0);
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid black;
+}
+#div6{
+  height: 25px;
+  width: 25px;
+  background-color: green;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px;
+  margin: 4px;
+  border: 2px solid black;
+}
+#div7{
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px;
+  margin: 4px;
+  border: 2px solid black;
+}
+#div8{
+  height: 25px;
+  width: 25px;
+  background-color: yellow;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px;
+  margin: 4px;
+  border: 2px solid black;
+}
+
+#navbar a{
+  text-decoration: none;
+  background-color: transparent;
+  margin-right: 200px;
+}
+
+#logo{
+  color: rgb(255, 98, 0);
+  font-size: 25px;
+}
+
+#navbar button{
+  color: white;
+  background-color: #f08804;
+  width: 50px;
+}
+#navbar input{
+  color: black;
+  background-color: white;
+}
+#navbar{
+  height: 60px;
+  background-color: black;
+  border: 5px solid white;
+}
+
+#div9{
+  display: inline;
+  background-color: aquamarine;
+}
+
+.div10{
+  background-color: rgb(152, 197, 152);
+  /* height: 100px;
+  width:200px; */
+  border: 4px solid rgb(30, 18, 41);
+  margin: 25px;
+  padding: 25px;
+}
+
+#div11{
+  height: 50px;
+  width:100px;
+  border: 4px dotted rgb(64, 14, 110);
+  margin: 25px;
+  padding: 25px;
+  background-color: rgb(255, 0, 93) ;
+  display: inline;
+}
+#div12{
+  height: 50px;
+  width:100px;
+  border: 4px dotted rgb(64, 14, 110);
+  margin: 25px;
+  padding: 25px;
+  background-color: rgb(0, 149, 255) ;
+  display: inline;
+}
+#div13{
+  height: 50px;
+  width:100px;
+  border: 4px dotted rgb(64, 14, 110);
+  margin: 25px;
+  padding: 25px;
+  background-color: blue ;
+  display: inline;
+}
+
+
+
