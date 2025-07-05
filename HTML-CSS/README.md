@@ -35,16 +35,6 @@ A comprehensive CSS reference with practical examples, best practices, and moder
 - Cross-browser compatibility
 - Performance optimization
 
-
-/* Modern CSS Example */
-.card {
-  width: min(90%, 1200px);
-  padding: 2rem;
-  margin: 2rem auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.1);
-}
-
 Usage Examples 💡
 CSS learning reference
 Styling cheat sheet
